@@ -5,3 +5,7 @@ server:
 spring:
   application:
     name: gateway-service
+  cloud:
+    kubernetes:
+      discovery:
+        all-namespaces: true
