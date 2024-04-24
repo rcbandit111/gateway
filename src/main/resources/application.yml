@@ -11,7 +11,7 @@ spring:
         - id: mockup
           uri: lb://mockup
           predicates:
-            - Path=/mockup/admin/**
+            - Path=/mockup/**
           filters:
             - RemoveRequestHeader=Cookie
             - name: CircuitBreaker
@@ -19,10 +19,10 @@ spring:
                 name: mockup
 #            - RewritePath=/api/mockup/admin/(?<path>.*), /mockup/admin/$\{path}
 
-      httpclient:
-        wiretap: true
-      httpserver:
-        wiretap: true
+#      httpclient:
+#        wiretap: true
+#      httpserver:
+#        wiretap: true
 
 logging:
   level:
