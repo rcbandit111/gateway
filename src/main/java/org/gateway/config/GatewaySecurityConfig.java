@@ -2,18 +2,13 @@ package org.gateway.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.web.server.ServerHttpSecurity;
-import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.security.web.server.SecurityWebFilterChain;
-import org.springframework.web.cors.CorsConfiguration;
-import org.springframework.web.reactive.function.client.WebClient;
-
-import java.util.Arrays;
-import java.util.List;
+//import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+//import org.springframework.security.config.web.server.ServerHttpSecurity;
+//import org.springframework.security.web.server.SecurityWebFilterChain;
 
 @Configuration
-public class WebClientConfig {
+//@EnableWebSecurity
+public class GatewaySecurityConfig {
 
 //    @Bean
 //    WebClient client() {
@@ -21,10 +16,13 @@ public class WebClientConfig {
 //                .build();
 //    }
 
-    @Bean
-    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        return http.authorizeHttpRequests((auth) -> auth.anyRequest().permitAll()).build();
-    }
+//    @Bean
+//    public SecurityWebFilterChain intSpringSecurityFilterChain(ServerHttpSecurity http) {
+//        http
+//                .authorizeExchange()
+//                .anyExchange().permitAll();
+//        return http.build();
+//    }
 
 
 
