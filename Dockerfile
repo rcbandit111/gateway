@@ -10,4 +10,5 @@ ADD build/libs/gateway.jar gateway.jar
 EXPOSE 8888
 
 # Start the app when the container launches
-ENTRYPOINT ["java", "-jar", "gateway.jar", "--spring.config.additional-location=file:/home/config/gateway-configuration.yml"]
+ENTRYPOINT ["java", "-jar", "gateway.jar"]
+#ENTRYPOINT ["java", "-jar", "gateway.jar", "--spring.config.additional-location=file:/home/config/gateway-configuration.yml"]
