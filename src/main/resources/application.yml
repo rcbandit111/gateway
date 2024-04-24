@@ -1,7 +1,7 @@
 server:
   port: 8888
-  servlet:
-    context-path: /api
+#  servlet:
+#    context-path: /api
 spring:
   application:
     name: gateway
@@ -11,13 +11,13 @@ spring:
         - id: mockup
           uri: lb://mockup
           predicates:
-            - Path=/api/mockup/admin/**
+            - Path=/mockup/admin/**
           filters:
             - RemoveRequestHeader=Cookie
             - name: CircuitBreaker
               args:
                 name: mockup
-            - RewritePath=/api/mockup/admin/(?<path>.*), /mockup/admin/$\{path}
+#            - RewritePath=/api/mockup/admin/(?<path>.*), /mockup/admin/$\{path}
 
       httpclient:
         wiretap: true
