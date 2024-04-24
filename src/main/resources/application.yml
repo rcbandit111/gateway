@@ -6,6 +6,9 @@ spring:
   application:
     name: gateway
   cloud:
+    kubernetes:
+      loadbalancer:
+        mode: SERVICE
     gateway:
       routes:
         - id: mockup
