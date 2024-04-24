@@ -24,6 +24,15 @@ spring:
 #      httpserver:
 #        wiretap: true
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: gateway, health
+  endpoint:
+    gateway:
+      enabled: true
+
 logging:
   level:
     reactor:
