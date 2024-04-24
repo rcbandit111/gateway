@@ -7,11 +7,11 @@ spring:
     name: gateway
   cloud:
     gateway:
-#      routes:
-#        - id: mockup
-#          uri: lb://mockup
-#          predicates:
-#            - Path=/mockup/**
+      routes:
+        - id: mockup
+          uri: lb://mockup
+          predicates:
+            - Path=/mockup/**
 #          filters:
 #            - RemoveRequestHeader=Cookie
 #            - name: CircuitBreaker
