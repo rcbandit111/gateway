@@ -13,11 +13,11 @@ import java.util.List;
 @Configuration
 public class WebClientConfig {
 
-    @Bean
-    WebClient client() {
-        return WebClient.builder()
-                .build();
-    }
+//    @Bean
+//    WebClient client() {
+//        return WebClient.builder()
+//                .build();
+//    }
 
     @Bean
     public SecurityWebFilterChain springSecurityFilterChain (ServerHttpSecurity http) {
