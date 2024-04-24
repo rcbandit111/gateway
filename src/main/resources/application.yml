@@ -11,12 +11,12 @@ spring:
         - id: mockup
           uri: lb://mockup
           predicates:
-            - Path=/mockup/admin/**
-          filters:
-            - RemoveRequestHeader=Cookie
-            - name: CircuitBreaker
-              args:
-                name: mockup
+            - Path=/**
+#          filters:
+#            - RemoveRequestHeader=Cookie
+#            - name: CircuitBreaker
+#              args:
+#                name: mockup
 #            - RewritePath=/api/mockup/admin/(?<path>.*), /mockup/admin/$\{path}
 
 #      httpclient:
