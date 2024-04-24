@@ -12,6 +12,8 @@ spring:
           uri: lb://mockup
           predicates:
             - Path=/mockup/**
+          filters:
+            - RewritePath=/mockup/mockup/(?<path>.*), /$\{path}
 #          filters:
 #            - RemoveRequestHeader=Cookie
 #            - name: CircuitBreaker
