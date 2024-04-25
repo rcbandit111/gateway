@@ -10,6 +10,9 @@ spring:
       loadbalancer:
         mode: SERVICE
     gateway:
+      discovery:
+        locator:
+          enabled: false
       routes:
         - id: mockup
           uri: lb://mockup
