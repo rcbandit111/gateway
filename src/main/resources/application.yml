@@ -12,7 +12,7 @@ spring:
     gateway:
       discovery:
         locator:
-          enabled: false
+          enabled: true
       routes:
         - id: mockup
           uri: lb://mockup
