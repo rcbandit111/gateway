@@ -36,7 +36,7 @@ dependencies {
 
 //    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
 
-    implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
+//    implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
     implementation 'org.springframework.cloud:spring-cloud-kubernetes-client-discovery'
     implementation 'org.springframework.cloud:spring-cloud-starter-kubernetes-client-loadbalancer'
 }
